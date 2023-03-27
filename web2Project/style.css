@@ -1,0 +1,380 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+}
+@media (min-width: 1600px) 
+{
+    .content .slide-show
+    {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    .content .body
+    {
+        position: absolute;
+        width: 100%;
+        top: 1550px;
+    }
+
+    .part
+    {
+        position: relative;
+        left: 25%;
+        top: 1600px;
+        width: 50%;     
+    }
+    .part .detail
+    {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        width:80%;
+        height: 80%;
+        background-color: white;
+        padding: 50px;
+        overflow: hidden; 
+    }
+    .part .detail a
+    {
+        text-decoration: none;
+        color: #006eb7;
+    }
+    .content form
+    {
+        position: absolute;
+        top: 450px;
+        left: 30%;
+        width: 50%;
+        height: 40px;
+        z-index: 1;
+    }
+    .content form .search-engine
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .content form input[type=text]
+    {
+        height: 100%;
+        width: 80%;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .content form input[type=button]
+    {
+        height: 100%;
+        width: 15%;
+        background-color: #006eb7;
+        color:#f2f2f0;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .content form input[type=button]:hover
+    {
+        background-color: rgba(65, 156, 241, 0.8);
+    }
+    footer 
+    {
+        position: absolute;
+        top: 3600px;
+        width: 100%;
+        height: 30%;
+        background-color: #1b1b1d;
+        color: white;
+    }
+}
+@media (min-width: 1280px)  and (max-width: 1599px ) 
+{
+    .content .slide-show
+    {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    .content .body
+    {
+        position: absolute;
+        width: 100%;
+        top: 1550px;
+    }
+
+    .part
+    {
+        position: relative;
+        left: 25%;
+        top: 1800px;
+        width: 50%;     
+    }
+    .part .detail
+    {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        width:80%;
+        height: 80%;
+        background-color: white;
+        padding: 50px;
+        overflow: hidden; 
+    }
+    .part .detail a
+    {
+        text-decoration: none;
+        color: #006eb7;
+    }
+    .content form
+    {
+        position: absolute;
+        top: 350px;
+        left: 30%;
+        width: 50%;
+        height: 40px;
+        z-index: 1;
+    }
+    .content form .search-engine
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .content form input[type=text]
+    {
+        height: 100%;
+        width: 80%;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .content form input[type=button]
+    {
+        height: 100%;
+        width: 15%;
+        background-color: #006eb7;
+        color:#f2f2f0;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .content form input[type=button]:hover
+    {
+        background-color: rgba(65, 156, 241, 0.8);
+    }
+    footer 
+    {
+        position: absolute;
+        top: 3800px;
+        width: 100%;
+        height: 30%;
+        background-color: #1b1b1d;
+        color: white;
+    }
+}  
+    
+    footer .border
+    {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 8px;
+    }
+    
+    footer .border .p1 { float: left; width: 30%; height: 100%; background-color: #0ca9ec;}
+    footer .border .p2 { float: left; width: 30%; height: 100%; background-color: #006eb7;}
+    footer .border .p3 { float: left; width: 30%; height: 100%; background-color: #ff3f33;}
+    footer .borde .p4 { float: left; width: 10%; height: 100%; background-color: #f2f2f0;}
+    
+    footer .part1
+    {
+        margin-top: 8px;
+        width: 30%;
+        height: 100%;
+        float: left;
+        padding: 15px 15px;
+    }
+    footer .part2
+    {
+        margin-top: 8px;
+        width: 30%;
+        height: 100%;
+        float: left;
+        padding: 15px 15px;
+    }
+    footer .part3
+    {
+        margin-top: 8px;
+        width: 40%;
+        height: 100%;
+        float: left;
+        padding: 15px 15px;
+    }
+@media (min-width: 720px) and (max-width: 1279px)
+{
+    .content .slide-show
+    {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    .content .body
+    {
+        position: absolute;
+        width: 100%;
+        top: 1500px;
+    }
+
+    .part
+    {
+        position: relative;
+        left: 25%;
+        top: 3000px;
+        width: 50%;     
+    }
+    .part .detail
+    {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        width:80%;
+        height: 80%;
+        background-color: white;
+        padding: 30px;
+        overflow: hidden; 
+    }
+    .part .detail a
+    {
+        text-decoration: none;
+        color: #006eb7;
+    }
+    .content form
+    {
+        position: absolute;
+        top: 250px;
+        left: 25%;
+        width: 60%;
+        height: 40px;
+        z-index: 1;
+    }
+    .content form .search-engine
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .content form input[type=text]
+    {
+        height: 100%;
+        width: 80%;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .content form input[type=button]
+    {
+        height: 100%;
+        width: 18%;
+        background-color: #006eb7;
+        color:#f2f2f0;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .content form input[type=button]:hover
+    {
+        background-color: rgba(65, 156, 241, 0.8);
+    }
+    footer 
+    {
+        position: absolute;
+        top: 5000px;
+        width: 100%;
+        height: 30%;
+        background-color: #1b1b1d;
+        color: white;
+    }
+}
+@media (max-width: 720px)
+{
+    .content .slide-show
+    {
+        position: absolute;
+        width: 100%;
+    }
+    .content .body
+    {
+        position: absolute;
+        width: 100%;
+        top: 1500px;
+    }
+
+    .part
+    {
+        position: relative;
+        left: 5%;
+        top: 5100px;
+        width: 100%;     
+    }
+    .part .detail
+    {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background-color: white;
+        padding: 30px;
+        overflow: hidden; 
+    }
+    .part .detail a
+    {
+        text-decoration: none;
+        color: #006eb7;
+    }
+    .content form
+    {
+        position: absolute;
+        top: 250px;
+        left: 25%;
+        width: 60%;
+        height: 40px;
+        z-index: 1;
+    }
+    .content form .search-engine
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .content form input[type=text]
+    {
+        height: 100%;
+        width: 80%;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .content form input[type=button]
+    {
+        height: 100%;
+        width: 18%;
+        background-color: #006eb7;
+        color:#f2f2f0;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .content form input[type=button]:hover
+    {
+        background-color: rgba(65, 156, 241, 0.8);
+    }
+    footer 
+    {
+        position: absolute;
+        top: 7200px;
+        width: 100%;
+        height: 30%;
+        background-color: #1b1b1d;
+        color: white;
+    }
+}

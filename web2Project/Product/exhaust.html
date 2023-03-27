@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Bánh xe</title>
+</head>
+<body>
+    <div class="over_lay">
+        <button class="close_btn"><i class="fa-regular fa-circle-xmark" style="font-size: 30px; color:black; position: absolute; left:0; top:0;" ></i></button>
+        <div class="login-form">
+            <form>
+                <h2 class="text-center">Đăng nhập</h2>
+                <div class="form-group">
+                    <label for="username" class="form-label">Tài khoản</label>
+                    <input type="text" class="form-control" id="username" placeholder="Nhập tài khoản" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" name="password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+                </div>
+                <div class="clearfix">
+                    <label class="float-left link"><a href="#">Đăng ký</a></label>
+                    <label class="float-right link"><a href="#">Quên mật khẩu?</a></label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="over_lay1">
+        <button class="close_btn1"><i class="fa-regular fa-circle-xmark" style="font-size: 30px; color:black; position: absolute; left:0; top:0;" ></i></button>
+        <div class="container col-md-6">
+        <h2>Đăng ký</h2>
+        <form action="#" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="hoTen">Họ tên:</label>
+                <input type="text" class="form-control" id="hoTen" placeholder="Nhập họ tên" name="hoTen">
+            </div>
+            <div class="form-group">
+                <label for="taiKhoan">Tài khoản:</label>
+                <input type="text" class="form-control" id="taiKhoan" placeholder="Nhập tài khoản" name="taiKhoan">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Nhập email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="soDienThoai">Số điện thoại:</label>
+                <input type="tel" class="form-control" id="soDienThoai" placeholder="Nhập số điện thoại" name="soDienThoai">
+            </div>
+            <div class="form-group">
+                <label for="matKhau">Mật khẩu:</label>
+                <input type="password" class="form-control" id="matKhau" placeholder="Nhập mật khẩu" name="matKhau">
+            </div>
+            <div class="form-group">
+                <label for="nhapLaiMatKhau">Nhập lại mật khẩu:</label>
+                <input type="password" class="form-control" id="nhapLaiMatKhau" placeholder="Nhập lại mật khẩu" name="nhapLaiMatKhau">
+            </div>
+            <div class="form-group">
+                <label for="gioiTinh">        Giới tính:</label><br>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gioiTinh" value="nam">Nam</label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gioiTinh" value="nu">Nữ</label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="gioiTinh" value="khac">Khác</label>
+            </div>
+            </div>
+                <button type="submit" class="btn btn-primary">Đăng ký</button>
+        </form>
+        </div>
+    </div>
+    <script>
+        $(".close_btn").click(function(){$(".over_lay").hide();});
+        $(".close_btn1").click(function(){$(".over_lay1").hide();});
+        $(".over_lay").hide();
+        $(".over_lay1").hide();
+    </script>
+    <nav class="nav">
+        <div class="logo">
+            <img src="logo-removebg.png" height="100px" width="100px">       
+        </div>
+        <form>
+            <ul class="ultility">
+                <li class="ultility1">
+                    <input id="n1" type="button" value="Đăng nhập">
+                    <script>
+                        $("#n1").click(function(){$(".over_lay").show();});
+                   </script>
+                    <input id="n2" type="button" value="Đăng ký">   
+                    <script>
+                        $("#n2").click(function(){$(".over_lay1").show();});
+                   </script>                
+                </li>
+            </ul>
+        </form>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Trang chủ</a></li>
+            <li class="menu-item"><a href="#">Giới thiệu</a></li>
+            <li class="menu-item"><a href="#">Tin tức</a></li>
+            <li class="menu-item"><a href="#">Liên Hệ</a></li>
+        </ul>
+        <button class="user">
+            <i class="fa-solid fa-user" style="font-size: 50px;"></i>
+        </button>
+        <div class="ribbon"> 
+            <div class="p1"></div>
+            <div class="p2"></div>
+            <div class="p3"></div>
+            <div class="p4"></div>
+        </div>
+        <div class="nav-btn"><i class="fa-solid fa-bars" style="font-size: 30px; color:white"></i></div>
+        <script>
+            $(".nav-btn").click(function(){$(".nav_overlay").show();});
+        </script>
+    </nav>
+    <div class="nav_overlay">
+        <nav class="mobile_nav">
+            <div class="close">
+                <button class="cls-btn" style="border-radius: 50%; height: 35px; width: 35px; position: absolute; right: 0;"><img src="1487086345-cross_81577.png"></button>
+            </div>
+            <ul class="mobile_list">
+                <li class="mobile-item"><a href="#">Trang chủ</a></li>
+                <li class="mobile-item"><a href="#">Giới thiệu</a></li>
+                <li class="mobile-item"><a href="#">Tin tức</a></li>
+                <li class="mobile-item"><a href="#">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $(".cls-btn").click(function(){$(".nav_overlay").hide();});
+        $(".nav_overlay").hide();
+    </script>
+    <div class="content">
+        <div class="left">
+            <div class="navigation">
+                <ul class="parent">
+                    <li class="has-sub"><a href="#">Các loại Pô</a></li>
+                    <li class="has-sub">
+                        <a href="#">RaceTech</a>
+                        <i class="icon-menu fas fa-chevron-down"></i>
+                        <ul class="child">
+                            <li><a href="#">Arrow</a></li>
+                            <li><a href="#">Akrapovic</a></li>
+                            <li><a href="#">Leovince</a></li>
+                            <li><a href="#">Yoshimura</a></li>
+                            <li><a href="#">SC project</a></li>
+                            <li><a href="#">Takegawa</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="#">GP2</a>
+                        <i class="icon-menu fas fa-chevron-down"></i>
+                        <ul class="child">
+                            <li><a href="#">Arrow</a></li>
+                            <li><a href="#">Akrapovic</a></li>
+                            <li><a href="#">Leovince</a></li>
+                            <li><a href="#">Yoshimura</a></li>
+                            <li><a href="#">SC project</a></li>
+                            <li><a href="#">Takegawa</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="#">Roundsil</a>
+                        <i class="icon-menu fas fa-chevron-down"></i>
+                        <ul class="child">
+                            <li><a href="#">Arrow</a></li>
+                            <li><a href="#">Akrapovic</a></li>
+                            <li><a href="#">Leovince</a></li>
+                            <li><a href="#">Yoshimura</a></li>
+                            <li><a href="#">SC project</a></li>
+                            <li><a href="#">Takegawa</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="#">Thunder</a>
+                        <i class="icon-menu fas fa-chevron-down"></i>
+                        <ul class="child">
+                            <li><a href="#">Arrow</a></li>
+                            <li><a href="#">Akrapovic</a></li>
+                            <li><a href="#">Leovince</a></li>
+                            <li><a href="#">Yoshimura</a></li>
+                            <li><a href="#">SC project</a></li>
+                            <li><a href="#">Takegawa</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="#">Trophy</a>
+                        <i class="icon-menu fas fa-chevron-down"></i>
+                        <ul class="child">
+                            <li><a href="#">Arrow</a></li>
+                            <li><a href="#">Akrapovic</a></li>
+                            <li><a href="#">Leovince</a></li>
+                            <li><a href="#">Yoshimura</a></li>
+                            <li><a href="#">SC project</a></li>
+                            <li><a href="#">Takegawa</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="#">Work</a>
+                        <i class="icon-menu fas fa-chevron-down"></i>
+                        <ul class="child">
+                            <li><a href="#">Arrow</a></li>
+                            <li><a href="#">Akrapovic</a></li>
+                            <li><a href="#">Leovince</a></li>
+                            <li><a href="#">Yoshimura</a></li>
+                            <li><a href="#">SC project</a></li>
+                            <li><a href="#">Takegawa</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a href="#">Prorace</a>
+                        <i class="icon-menu fas fa-chevron-down"></i>
+                        <ul class="child">
+                            <li><a href="#">Arrow</a></li>
+                            <li><a href="#">Akrapovic</a></li>
+                            <li><a href="#">Leovince</a></li>
+                            <li><a href="#">Yoshimura</a></li>
+                            <li><a href="#">SC project</a></li>
+                            <li><a href="#">Takegawa</a></li>
+                        </ul>
+                    </li>
+                    <script>
+                        $(document).ready(function (){
+                        $('ul .icon-menu').click(function () {
+                        $(this).parent('li').children('ul').slideToggle();
+                        $(this).toggleClass('fa-chevron-down fa-chevron-right');
+                        });
+                    });
+                    </script>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <table>
+                <tr>
+                    <td>
+                        <div class="item">
+                            <div class="pic"><img src="https://acquybenbi.com/wp-content/uploads/2020/06/ac-quy-dong-nai-n100-12v-100ah-1.jpg" height="100%" width="100%"></div>
+                            <div class="detail">
+                                <div class="title" style="text-align: center; padding: 5px 5px;">Acquy lỏng Đồng nai</div>
+                                <div class="price" style="text-align: center; padding: 5px 5px;">350.000vnd</div>
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="item">
+                            <div class="pic"><img src="#" height="100%" width="100%"></div>
+                            <div class="detail">
+                                <div class="title" style="text-align: center; padding: 5px 5px;">Acquy đặc Đồng nai</div>
+                                <div class="price" style="text-align: center; padding: 5px 5px;">350.000vnd</div>
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="item">
+                            <div class="pic"><img src="#" height="100%" width="100%"></div>
+                            <div class="detail">
+                                <div class="title" style="text-align: center; padding: 5px 5px;">Acquy chì Đồng nai</div>
+                                <div class="price" style="text-align: center; padding: 5px 5px;">350.000vnd</div>
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="item">
+                            <div class="pic"><img src="#" height="100%" width="100%"></div>
+                            <div class="detail">
+                                <div class="title" style="text-align: center; padding: 5px 5px;">Acquy lỏng Globe</div>
+                                <div class="price" style="text-align: center; padding: 5px 5px;">350.000vnd</div>
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="item">
+                            <div class="pic"><img src="#" height="100%" width="100%"></div>
+                            <div class="detail">
+                                <div class="title" style="text-align: center; padding: 5px 5px;">Acquy đặc Globe</div>
+                                <div class="price" style="text-align: center; padding: 5px 5px;">350.000vnd</div>
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="border">
+            <div class="p1"></div>
+            <div class="p2"></div>
+            <div class="p3"></div>
+            <div class="p4"></div>
+        </div>
+        <div class="part1">
+            <p>Chi nhánh 2Wheel miền Bắc</p>
+            <p>16 Dịch Vọng Hậu Q Cầu Giấy Hà Nội</p><br>
+
+            <p>Chi nhánh 2Wheel miền Nam</p>
+            <p>38 Điện Biên Phủ P6 Q3 TPHCM</p>
+        </div>
+        <div class="part2">
+            <p>Chi nhánh 2Wheel miền Bắc</p>
+            <p>Tel: 093746335</p>
+            <p>Email: 2WheelNorthVN@gmail.com</p><br>
+
+            <p>Chi nhánh 2Wheel miền Nam</p>
+            <p>Tel: 0937386155</p>
+            <p>Email: 2WheelSouthVN@gmail.com</p>
+        </div>
+        <div class="part3">
+            <div class="pic1">
+                <img src="certificate.png">
+            </div>
+            <div class="pic2">
+                <div style="padding: 5px;">Được tài trợ bởi</div>
+                <img src="logo1.JPG" height="30px" width="90px">
+                <img src="logo2.jpg" height="30px" width="90px">
+                <img src="logo3.png" height="30px" width="90px">
+                <img src="logo4.jpg" height="30px" width="90px">
+                <img src="logo5.jpeg" height="30px" width="90px">
+            </div>
+        </div>        
+    </footer>
+</body>
+</html>

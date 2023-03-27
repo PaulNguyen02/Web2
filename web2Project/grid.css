@@ -1,0 +1,412 @@
+@media (min-width: 1600px) 
+{
+  .maintain-service
+  {
+      position: absolute;
+      top: -200px;
+      width: 100%;
+  }
+    .maintain-service .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .maintain-service .container1 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .maintain-service .container1 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      .fixing-service
+      {
+          position: absolute;
+          width: 100%;
+          top: 200px;
+      } 
+    
+    .fixing-service .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .fixing-service .container2 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .fixing-service .container2 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+
+      .product
+      {
+          position: absolute;
+          width: 100%;
+          top: 800px;
+      } 
+    
+    .product .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .product .container3 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .product .container3 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
+@media (min-width: 1280px)  and (max-width: 1599px ) 
+{
+  .maintain-service
+  {
+      position: absolute;
+      top: -500px;
+      width: 100%;
+  }
+    .maintain-service .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .maintain-service .container1 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .maintain-service .container1 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      .fixing-service
+      {
+          position: absolute;
+          width: 100%;
+          top: -50px;
+      } 
+    
+    .fixing-service .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .fixing-service .container2 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .fixing-service .container2 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+
+      .product
+      {
+          position: absolute;
+          width: 100%;
+          top: 800px;
+      } 
+    
+    .product .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .product .container3 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .product .container3 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
+@media (min-width: 720px) and (max-width: 1279px)
+{
+  .maintain-service
+  {
+      position: absolute;
+      top: -500px;
+      width: 100%;
+  }
+    .maintain-service .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .maintain-service .container1 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto auto  ;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .maintain-service .container1 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      .fixing-service
+      {
+          position: absolute;
+          width: 100%;
+          top: 150px;
+      } 
+    
+    .fixing-service .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .fixing-service .container2 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto auto  ;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .fixing-service .container2 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+
+      .product
+      {
+          position: absolute;
+          width: 100%;
+          top: 1400px;
+      } 
+    
+    .product .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .product .container3 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .product .container3 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
+@media (max-width: 719px)
+{
+  .maintain-service
+  {
+      position: absolute;
+      top: -1000px;
+      width: 100%;
+  }
+    .maintain-service .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .maintain-service .container1 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto ;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .maintain-service .container1 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      .fixing-service
+      {
+          position: absolute;
+          width: 100%;
+          top: 150px;
+      } 
+    
+    .fixing-service .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .fixing-service .container2 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto ;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .fixing-service .container2 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+
+      .product
+      {
+          position: absolute;
+          width: 100%;
+          top: 2200px;
+      } 
+    
+    .product .title
+    {
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+        padding: 15px;
+    }
+    .product .container3 {
+        margin-left: 10%;
+        width: 80%; 
+        height: 300px;   
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        animation: fadein 2s;
+      }
+      .product .container3 > div {
+        border: 1px solid #fff;
+        padding: 80px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
