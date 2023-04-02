@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang đăng nhập</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<style type="text/css">
+    body {
+        background-image: url("img/service-1.jpg");
+    }
+
+    .login-form {
+        width: 340px;
+        margin: 50px auto;
+        font-size: 15px;
+        color: #333;
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        height: 40px;
+        border-radius: 2px;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    .form-control:focus {
+        border-color: #5cb85c;
+    }
+
+    .form-label {
+        font-weight: bold;
+    }
+
+    .btn {
+        font-size: 15px;
+        font-weight: bold;
+        background: #5cb85c;
+        border-radius: 2px;
+        border: none;
+        min-width: 120px;
+    }
+
+    .btn:hover, .btn:focus {
+        background: #419641;
+        outline: none;
+    }
+
+    .link {
+        color: #5cb85c;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .link:hover {
+        color: #419641;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+	<div class="login-form">
+		<form>
+			<h2 class="text-center">Đăng nhập</h2>
+			<div class="form-group">
+				<label for="username" class="form-label">Tài khoản</label>
+				<input type="text" class="form-control" id="username" placeholder="Nhập tài khoản" name="username">
+			</div>
+			<div class="form-group">
+				<label for="password" class="form-label">Mật khẩu</label>
+				<input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" name="password">
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+			</div>
+			<div class="clearfix">
+				<label class="float-left link"><a href="signup.html">Đăng ký</a></label>
+				<label class="float-right link"><a href="#">Quên mật khẩu?</a></label>
+			</div>
+		</form>
+	</div>
+</body>
+<script>
+    const form = document.querySelector('form');
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // ngăn chặn form được gửi đi mặc định
+  
+        if (username.value.trim() === '') {
+            alert('Vui lòng nhập tên đăng nhập!');
+        return;
+        }
+  
+        if (password.value.trim() === '') {
+            alert('Vui lòng nhập mật khẩu!');
+        return;
+        }
+    // nếu các trường không bị để trống, gửi form đi
+    this.submit();
+});
+</script>
+</html>
