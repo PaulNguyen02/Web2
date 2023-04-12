@@ -164,7 +164,32 @@
                     </div>
                     <div class="form_control">
                       <label for="upload"> Upload CV của bạn </label>
-                      <input type="file" id="upload" name="upload" />
+                      <input type="file" id="upload" name="upload" accept=".pdf"/>
+                      <script>
+                        $("input[name=upload]").click(function (e) {
+                            // console.log(window.location.href);
+                            let pdf = $(".pdf");
+                            var form = new FormData();
+                            form.append("pdf", pdf[0].files[0]);
+                            //Post to server
+                            $.ajax({
+                                type: "POST",
+                                url: "https://đỉa chỉ serverPHP",
+                                processData: false,
+                                mimeType: "multipart/form-data",
+                                contentType: false,
+                                data: form,
+                                success: function (response) {
+                                    console.log(response);
+                                    let result = JSON.parse(response);
+                                    console.log(result);
+                                },
+                                error: function (e) {
+                                    console.log(e);
+                                }
+                            });
+                        });
+                    </script>
                     </div>
                   </div>
                   <div class="button_container">
