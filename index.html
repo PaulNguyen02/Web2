@@ -29,6 +29,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -39,8 +40,26 @@
         </div>
     </div>
     <!-- Spinner End -->
-
-
+    <!-- Cookie Consent Start -->
+    <div class="cookie-consent">
+        <span>Trang web này có sử dụng cookie để nâng cao tính trải nghiệm của bạn</span>
+        <div class="mt-2 d-flex align-items-center justify-content-center g-2">
+          <button id="accept" class="allow-button mr-1">Cho phép</button>
+          <script>
+            $("#accept").click(function (){                
+                document.cookie = `domain=motoserv`;
+                $(".cookie-consent").hide();
+            })
+          </script>     
+          <button id="close" class="allow-button">Từ chối</button>
+          <script>
+            $("#close").click(function (){
+                $(".cookie-consent").hide();
+            })
+          </script>   
+        </div>          
+    </div>
+    <!-- Cookie Consent End-->    
     <!-- Topbar Start -->
     <div class="container-fluid bg-light p-0">
         <div class="row gx-0 d-none d-lg-flex">
