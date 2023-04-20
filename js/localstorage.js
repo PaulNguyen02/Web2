@@ -4,16 +4,26 @@ function Addtocart(prd)
     if (localStorage.getItem("prd1") == null) 
     { //nếu storage chưa có thì thêm vô
         listprd.push(prd);
-        localStorage.setItem('prd1', JSON.stringify(listprd));        
+        localStorage.setItem('prd1', JSON.stringify(listprd));      
+        localStorage.setItem('total', prd.price);    
     }
     else
     {
+        var sum=parseInt(localStorage.getItem("total"));
         var getarr = JSON.parse(localStorage.getItem("prd1"));
         listprd = getarr;
         listprd.push(prd);
-        localStorage.setItem('prd1', JSON.stringify(listprd));        
+        localStorage.setItem('prd1', JSON.stringify(listprd)); 
+        sum+=parseInt(prd.price);
+        localStorage.setItem('total', sum);          
     }    
 }  
+
+function Sum()
+{
+    var sum= localStorage.getItem("total");
+    document.write(`<div style="color: red;">Chi phí ước tính: ${sum} USD</div>`);
+}
 
 function discard(i)
 {
