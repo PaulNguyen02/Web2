@@ -64,9 +64,7 @@
                     <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                    <button class="btn btn-sm-square bg-white text-primary me-0" onclick="clickcart()"><i class="fas fa-shopping-cart"></i></button>
-                    <button class="btn btn-sm-square bg-white text-primary me-0"><i class="fas fa-user"></i></i></button>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>                    
                 </div>
             </div>
         </div>
@@ -98,6 +96,13 @@
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="signin.html" class="dropdown-item">Đăng nhập</a>
+                        <a href="cart.html" class="dropdown-item">Giỏ hàng</a>
+                    </div>
+                </div>
             </div>
             <a href="FAQ.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">FAQs<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -409,13 +414,7 @@
         </div>
     </div>
     <!-- Footer End -->
-    <script>
-        function clickcart()
-        {
-            window.location.href="cart.html";
-        }
-    </script>
-
+    
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
